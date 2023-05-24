@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel = "stylesheet" type = "text/css" href = "estilos.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul class = "navbar" style = "padding-right: 35%; ">
+                <li><a href = "Inicio.html"> Inicio </a></li>
+                <li class="dropE">
+                    <a href="Empresa.html" class="dropbtn">Empresa</a>
+                    <div class="drop-E">
+                        <button><a href="Empresa.html#acercaDe">Acerca de</a></button>
+                        <button><a href="Empresa.html#FAQ">FAQ</a></button>
+                    </div>
+                </li>
+                <li class = "dropEs">
+                    <a href = "Especialidades-Proyectos.html" class = "dropbtn2"> Especialidades </a>
+                    <div class = "drop-Es">
+                        <button><a href="Especialidades-Proyectos.html#cctv">CCTV o Videovigilancia</a></button>
+                        <button><a href="Especialidades-Proyectos.html#control">Control de acceso</a></button>
+                        <button><a href="Especialidades-Proyectos.html#detector">Detector de incendios</a></button>
+                        <button><a href="Especialidades-Proyectos.html#mantenimiento">Mantenimiento</a></button>
+                        <button><a href="Especialidades-Proyectos.html#ciberseguridad">Ciberseguridad</a></button>
+                    </div>
+                </li>
+                <li class = "dropP">
+                    <a href = "Especialidades-Proyectos.html" class = "dropbtn3"> Proyectos </a>
+                    <div class = "drop-P">
+                        <button><a href="Especialidades-Proyectos.html#control">Control de acceso</a></button>
+                        <button><a href="Especialidades-Proyectos.html#cableadoEstructurado">Cableado Estructurado</a></button>
+                        <button><a href="Especialidades-Proyectos.html#gdlTech">Guadalajara Technology Park</a></button>
+                    </div>
+                </li>
+                <li><a href = "contactanos.html"> Contactanos </a></li>
+            </ul>
+            <div class = "selbortech"><img src="imagenes/selbortech.jpeg"></div> 
+        </div>
+    </header>
+
+    <section id="contacto">
+        <div class="enviar-correo">
+            <form action="contactar.php" method="post">
+                <div class="solicitud" style = "margin-right: 49%; background-color: #e6850f; padding: 30px; width: 100%">
+                    <h2 style = "margin-top: 1px; color: white;">Solicita información</h2>
+                    
+                    <p style = "margin-bottom: 19px; color: white; font-size: 15px; margin-top: -5px;">Estamos seguros de que podemos  cumplir <br> con las necesidades que requiere su empresa</p>
+                    <div class="top" style= "margin-bottom: 5px;">
+                        <input type="text" id="nombreCliente" style= "margin-right: 2px;" name="nombreCliente" autocomplete = "off" placeholder = "Nombre:" required>
+                        
+                        <input type="email"  id="correoCliente" name="correoCliente" autocomplete = "off" placeholder = "Correo:" required>
+                    </div>
+                        
+                    <div class="mid" style= "margin-bottom: 5px;">
+                        <input type="tel" id="telefono" name="telefono" style = "margin-right: 2px; width:100%" autocomplete = "off" placeholder = "Numero:" required>
+                        
+                        <select id="especialidad" style = "margin-left: 1" name="especialidad" placeholder = "Selecciona Especialidad">
+                            <option value="">Especialidad</option>
+                            <option value="CCTC o Videovigilancia">CCTV o Videovigilancia</option>
+                            <option value="Control de acceso">Control de acceso</option>
+                            <option value="Deteccion de incendio">Deteccion de incendio</option>
+                            <option value="Mantenimiento">Mantenimiento</option>
+                            <option value="Ciberseguridad">Ciberseguridad</option>
+                        </select>
+                    </div>
+                        
+                    <div class = "c-msj" style= "margin-bottom: -3px;">
+                        <textarea id="Comentarios" name="Comentarios" placeholder = "Escribe tu mensaje" required></textarea>
+                    </div>
+                    <div class = "btn-contacto" style = "margin-left: 29%; margin-top: 4px; margin-bottom: -10px;">
+                        <button style = "margin-left: 39px; color: white; background-color: black; margin: 10px 20px !important; text-decoration: none; border-top-right-radius: 15px; border-bottom-left-radius: 15px; display: flex; border: none; z-index: -1;" type="submit">
+                            Solicitar
+                            &nbsp;
+                            <i class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class = "copy">
+            <p> &copy; 2022 Selbortech, Derechos Reservados. Viva la familia </p>
+        </div>
+    </footer>
+
+</body>
+</html>

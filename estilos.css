@@ -1,0 +1,950 @@
+/* ----------------------------- Barra ---------------------------------- */
+.navbar{
+    list-style-type: none;
+    margin: 1%;
+    padding: 0.89%;
+    background-color: black;
+    margin-right: 20%;
+    overflow:hidden;
+    height: 12vh;
+    border-color: #000000;
+}
+.navbar li{
+    float: left;
+}
+.navbar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Century Gothic", Verdana, sans-serif;
+}
+.navbar li a:hover{
+    background-color: black;
+    color: orange;
+}
+
+.espacios li a{
+  color: black; 
+}
+.espacios li a:hover{
+  color: black; 
+}
+
+/* ----------------------------- Empresa ---------------------------------- */
+
+.drop-E {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropE:hover .drop-E {
+  display:grid;
+  background-color: #413d3d;
+}
+
+.drop-E button{
+  color: rgb(255, 253, 253);
+  background-color: #413d3d;
+  padding: 4px 6px;
+  text-decoration: none;
+  display:block;
+  border: none;
+  z-index: -1;
+  object-fit: cover;
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+  
+}
+
+.drop-E button:hover {
+  background-color: #090909;
+  color: orange;
+}
+
+
+/* -------------------------------- Especialidades -------------------------------- */
+
+.drop-Es {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropEs:hover .drop-Es {
+  display:grid;
+  background-color: #413d3d;
+}
+
+.drop-Es button{
+  color: rgb(255, 253, 253);
+  background-color: #413d3d;
+  padding: 4px 6px;
+  text-decoration: none;
+  display:block;
+  border: none;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.drop-Es button:hover {
+  background-color: #090909;
+  color: orange;
+}
+
+/* -------------------------------- Proyectos ----------------------------- */
+
+.drop-P {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropP:hover .drop-P {
+  display:grid;
+  background-color: #413d3d;
+}
+
+.drop-P button{
+  color: rgb(255, 253, 253);
+  background-color: #413d3d;
+  padding: 4px 6px;
+  text-decoration: none;
+  display:block;
+  border: none;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.drop-P button:hover {
+  background-color: #090909;
+  color: orange;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+*{
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Century Gothic", Verdana, sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+h4{font-size: 1.7em}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+a .btn_contacto button{
+    color: rgb(255, 253, 253);
+    background-color: #e6850f;
+    margin: 10px 20px !important;
+    text-decoration: none;
+    display: flex;
+    border: none;
+    z-index: -1;
+}
+
+.testClass{
+  text-decoration: none !important;
+  color: white !important;
+  display: none;
+}
+
+.cartas button{
+    color: rgb(255, 253, 253);
+    background-color: #e6850f;
+    padding: 4px 6px;
+    text-decoration: none;
+    display:block;
+    border: none;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    border-color: #000000;
+}
+
+header .selbortech{
+    margin: 1;
+    padding: 0.89%;
+    align-items:end;
+    flex-direction: column-reverse;
+    display: flex;
+    position: absolute;
+    top: .2px;
+    right: 28px;
+}
+
+header .container{
+    display:flex;
+    flex-direction:column-reverse;
+    align-items:baseline;
+    background-color: white;
+    border-color:#000000;
+}
+header .navbar{
+    display: flex;
+    margin: 1px;
+    object-fit:fill;
+}
+
+footer .copy{
+    font-size: 60%;
+    font-weight: 100;
+    font: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------------------------------------------------------------- */
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/cctv.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+#hero h3{
+    font-weight: normal;
+}
+
+#hero button{
+  padding: 10px 20px;
+  background-color: #e6850f;
+  color: white;
+  border-top-right-radius: 2px;
+}
+
+#hero a .btn_contacto button:hover{
+  background-color: #000000;
+  color:#e6850f;
+}
+
+
+/* -------------------------------------------- */
+#nosotros .container{
+  padding: 19vh;
+  justify-content: center;
+  display: flex;
+}
+
+#nosotros .texto{
+  width: 50%;
+  text-align: initial;
+  padding: 0px, 30px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#nosotros .img-container{
+  background-image: url("imagenes/img_pagInicio.jpg");
+  background-attachment: cover;
+  background-position: center center;
+  height: 600px;
+  width: 46.5%;
+}
+/* ------------------------------------------------------------------------------ */
+#acercaDe .container{
+  padding: 19vh;
+  justify-content: center;
+  display: flex;
+  margin-top: -9%;
+}
+
+#acercaDe .texto{
+  width: 50%;
+  text-align: initial;
+  padding: 0px, 30px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#acercaDe .img-container{
+  background-image: url("imagenes/img_Acerca_de.jpg");
+  background-attachment: cover;
+  background-position: center center;
+  height: 800px;
+  width: 46.5%;
+}
+
+#acercaDe .acerca{
+  font-size: 20;
+  font-weight: 500;
+  font-variant: small-caps;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+#acercaDe h2{
+  font-size: 2em;
+}
+#acercaDe h3{
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+#acercaDe p{
+  font-size: 1em;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------ */
+
+#cctv .container{
+  padding: 19vh;
+  justify-content: center;
+  display: flex;
+  margin-top: 1;
+  margin-bottom: 1.7px;
+}
+
+#cctv .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("imagenes/cctvContenido.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#cctv .texto{
+  background-color: #e6850f;
+  color: white;
+  width: 50%;
+  text-align: initial;
+  padding: 10px, 30px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-right: -40%;
+}
+
+
+#cctv h2{
+  font-size: 2em;
+}
+
+#cctv p{
+  font-size: 1em;
+  margin-left: 30px
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#control .container{
+  padding: 19vh;
+  justify-content: center;
+  display: flex;
+  margin-top: 1;
+  margin-bottom: 1.7px;
+}
+
+#control .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("imagenes/access.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#control .texto{
+  background-color: #000000;
+  color: #e6850f;
+  width: 50%;
+  text-align: initial;
+  padding: 10px, 30px;
+  max-width: 90em;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-right: 55%;
+}
+
+
+#control h2{
+  font-size: 2em;
+}
+#control li p{
+  margin-left: 10px
+}
+
+#control p{
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#detector .container{
+  padding: 19vh;
+  justify-content: center;
+  display: flex;
+  margin-top: 1;
+  margin-bottom: 1.7px;
+}
+
+#detector .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("imagenes/detector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#detector .texto{
+  background-color: #e6850f;
+  color: white;
+  width: 50%;
+  text-align: initial;
+  padding: 10px, 30px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-right: -40%;
+}
+
+
+#detector h2{
+  font-size: 2em;
+}
+
+#detector p{
+  font-size: 1em;
+  margin-left: 30px
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#mantenimiento .container{
+  padding: 19vh;
+  justify-content: center;
+  display: flex;
+  margin-top: 1;
+  margin-bottom: 1.7px;
+}
+
+#mantenimiento .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: /* linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  , */url("imagenes/error.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* #mantenimiento .texto{
+  background-color: #000000;
+  color: #e6850f;
+  width: 50%;
+  text-align: initial;
+  padding: 10px, 30px;
+  max-width: 90em;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-right: 55%;
+} */
+
+
+#mantenimiento h2{
+  font-size: 2em;
+}
+#mantenimiento li p{
+  margin-left: 10px
+}
+
+#mantenimiento p{
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#ciberseguridad .container{
+  padding: 19vh;
+  justify-content: center;
+  display: flex;
+  margin-top: 1;
+  margin-bottom: 1.7px;
+}
+
+#ciberseguridad .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: /* linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  , */url("imagenes/error.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* #mantenimiento .texto{
+  background-color: #000000;
+  color: #e6850f;
+  width: 50%;
+  text-align: initial;
+  padding: 10px, 30px;
+  max-width: 90em;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-right: 55%;
+} */
+
+
+#ciberseguridad h2{
+  font-size: 2em;
+}
+#ciberseguridad li p{
+  margin-left: 10px
+}
+
+#ciberseguridad p{
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#cableadoEstructurado .container{
+  padding: 19vh;
+  justify-content: center;
+  display: flex;
+  margin-top: 1;
+  margin-bottom: 1.7px;
+}
+
+#cableadoEstructurado .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: /* linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  , */url("imagenes/error.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* #mantenimiento .texto{
+  background-color: #000000;
+  color: #e6850f;
+  width: 50%;
+  text-align: initial;
+  padding: 10px, 30px;
+  max-width: 90em;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-right: 55%;
+} */
+
+
+#cableadoEstructurado h2{
+  font-size: 2em;
+}
+#cableadoEstructurado li p{
+  margin-left: 10px
+}
+
+#cableadoEstructurado p{
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#gdlTech .container{
+  padding: 19vh;
+  justify-content: center;
+  display: flex;
+  margin-top: 1;
+  margin-bottom: 1.7px;
+}
+
+#gdlTech .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: /* linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  , */url("imagenes/error.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* #mantenimiento .texto{
+  background-color: #000000;
+  color: #e6850f;
+  width: 50%;
+  text-align: initial;
+  padding: 10px, 30px;
+  max-width: 90em;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-right: 55%;
+} */
+
+
+#gdlTech h2{
+  font-size: 2em;
+}
+#gdlTech li p{
+  margin-left: 10px
+}
+
+#gdlTech p{
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#espe .container{
+  padding: 100px 0px;
+  text-align: center;
+  align-items: center;
+}
+
+#espe{
+  color: white;
+  margin-top:auto;  
+  background-color: rgb(55, 54, 54);
+  text-align: center;
+}
+
+#espe button{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#espe button:hover{
+  background-color: #000000;
+  color:#e6850f;
+}
+#espe h4{
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+
+#espe p{
+  display: block;
+  margin-bottom: 30px;
+}
+
+#espe .esp-clase{
+  display: flex;
+  justify-content: center;
+}
+
+#espe .carta{
+  display: flex;
+  padding: 50px;
+  background-size: 75% 165px;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.carta:first-child{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("imagenes/ciber.jpg");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center center;
+}
+
+.carta:nth-child(2){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 98vh;
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("imagenes/mantenimeinto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carta:nth-child(3){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("imagenes/cctvasdfd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/* -----------------------------------.------- */
+/* Contenedor principal del formulario */
+.enviar-correo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "Century Gothic", Verdana, sans-serif;
+  font-style: italic;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 50px;
+  flex-wrap: wrap;
+}
+
+/* Estilo de la etiqueta del campo */
+.enviar-correo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Estilo del campo de entrada */
+.enviar-correo input,
+.enviar-correo select,
+.enviar-correo textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;             
+  width: 110%;
+  font-family: "Century Gothic", Verdana, sans-serif;
+  font-style: italic;
+}
+
+
+
+/* Estilo del botón de enviar */
+#contacto .enviar-correo button[type="submit"] {
+  color: rgb(255, 253, 253) !important;
+  background-color: #000000 !important;
+  margin: 10px 20px !important;
+  text-decoration: none;
+  display: flex;
+  border: none;
+  z-index: -1;
+  border: none;
+  border-radius: 3px;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Century Gothic", Verdana, sans-serif;
+  padding: 10px 20px;
+}
+
+
+
+.enviar-correo .solicitud p{
+  font-size: 20px;
+}
+
+
+
+.enviar-correo ::placeholder{
+  font-family: "Century Gothic", Verdana, sans-serif;
+  font-style: italic;
+}
+
+.enviar-correo textarea{
+  font-family: "Century Gothic", Verdana, sans-serif;
+  font-style: oblique;
+  width:100%;
+}
+
+/* Estilo de las secciones del formulario */
+.enviar-correo section {
+  margin-bottom: 30px;
+  width: 48%;
+}
+
+#contacto .solicitud{
+  background-color: #e6850f;
+  color: #e6850f;
+  width: 50%;
+  text-align: initial;
+  padding: 10px, 30px;
+  max-width: 90em;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-right: 55%;
+}
+
+/* Estilo para ajustar el ancho del campo de especialidad */
+.enviar-correo #especialidad {
+  width: 100%;
+}
+
+
+.top {
+  width: 105%;
+  text-align: initial;
+  padding: 20px, 50px;
+  justify-content: space-between;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mid {
+  width: 100%;
+  text-align: initial;
+  padding: 20px, 50px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+/* Estilos de respuesta para dispositivos móviles */
+@media (max-width: 767px) {
+  .enviar-correo {
+    flex-direction: row;
+  }
+  
+  .enviar-correom section {
+    width: 100%;
+  }
+}

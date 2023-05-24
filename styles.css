@@ -1,0 +1,211 @@
+body{
+    background-color: lightgray;
+    font-family: "Century Gothic", Verdana, sans-serif;
+    color: #333;
+}
+
+/* ----------------------------------------------------------------- */
+
+.navbar{
+    list-style-type: none;
+    margin: 1%;
+    padding: 0.89%;
+    background-color: black;
+    margin-right: 45px;
+    overflow:hidden;
+}
+.navbar li{
+    float: left;
+}
+.navbar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Century Gothic", Verdana, sans-serif;
+}
+.navbar li a:hover{
+    background-color: black;
+    color: orange;
+}
+
+.espacios li a{
+  color: black; 
+}
+.espacios li a:hover{
+  color: black; 
+}
+
+/* ----------------------------------------------------------------- */
+
+p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif "Century Gothic", Verdana, sans-serif;
+}
+footer{
+    font-size: 20;
+    text-align: left;
+    margin-top: 50px;
+    color: #525252;
+    font-family: "Century Gothic", Verdana, sans-serif;
+}
+h1{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align:justify;
+    margin-top: 20px;
+    font-family: "Century Gothic", Verdana, sans-serif;
+}
+h3{
+    font-size: 14px;
+    font-weight: 500;
+    text-align:justify  ;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: "Century Gothic", Verdana, sans-serif;
+}   
+
+/* ----------------------------- Empresa ---------------------------------- */
+.drop-E {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropE:hover .drop-E {
+  display:grid;
+  background-color: #413d3d;
+}
+
+.drop-E button{
+  color: rgb(255, 253, 253);
+  background-color: #413d3d;
+  padding: 4px 6px;
+  text-decoration: none;
+  display:block;
+  border: none;
+  z-index: -1;
+  object-fit: cover;
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+  
+}
+
+.drop-E button:hover {
+  background-color: #090909;
+  color: orange;
+}
+
+
+/* -------------------------------- Especialidades -------------------------------- */
+
+.drop-Es {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropEs:hover .drop-Es {
+  display:grid;
+  background-color: #413d3d;
+}
+
+.drop-Es button{
+  color: rgb(255, 253, 253);
+  background-color: #413d3d;
+  padding: 4px 6px;
+  text-decoration: none;
+  display:block;
+  border: none;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.drop-Es button:hover {
+  background-color: #090909;
+  color: orange;
+}
+/* -------------------------------- Proyectos ----------------------------- */
+
+.drop-P {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropP:hover .drop-P {
+  display:grid;
+  background-color: #413d3d;
+}
+
+.drop-P button{
+  color: rgb(255, 253, 253);
+  background-color: #413d3d;
+  padding: 4px 6px;
+  text-decoration: none;
+  display:block;
+  border: none;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.drop-P button:hover {
+  background-color: #090909;
+  color: orange;
+}
+
+/* ----------------------------------------------------------------------*/
+#footer .copy p{
+  height: 150px;
+  display: flex;
+  font-size: smaller;
+  font-weight: lighter;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#acercaDe .acerca h2{
+    font-size: 14px;
+    font-weight: 500;
+    text-align:center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: "Century Gothic", Verdana, sans-serif;
+}
+
+#acercaDe .acerca p{
+  font-size: 25px;
+  font-weight: 500;
+  text-align:left;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  right: 20%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: "Century Gothic", Verdana, sans-serif;
+}
+#acercaDe .acerca img{
+  position: absolute;
+  top: 15%;
+  left: 4.5%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#FAQ .FAQ h2{
+  font-size: 25px;
+  font-weight: 500;
+  text-align:left;
+  position:absolute;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: "Century Gothic", Verdana, sans-serif;
+}
